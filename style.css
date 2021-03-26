@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(151, 148, 148);
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+}
+
+.regForm {
+    width: 500px;
+    /* border: 3px groove rgb(4, 77, 77); */
+}
+
+.headline {
+    background-color: darkslategrey;
+    color: rgb(246, 255, 255);
+    padding: 1rem;
+    text-align: center;
+}
+
+.form-content {
+    padding: 1rem;
+    background-color: rgb(231, 168, 168);
+    color: rgb(65, 3, 13);
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column; 
+    padding: .2rem;
+    margin-bottom: .1rem;
+}
+
+.input-group input {
+    margin-top: .1rem;
+    padding: .5rem;
+}
+
+.form-select {
+    padding: .5rem;
+}
+
+.radio {
+    border: black solid .1rem;
+    background: rgb(255, 255, 255);
+    padding: .5rem;
+    margin-bottom: .1rem;
+}
+
+.radio input {
+    margin-left: 2rem;
+}
+
+.checkBox {
+    padding: .2rem;
+    margin-bottom: .1rem;
+}
+
+.btn {
+    width: 100%;
+    background: rgb(201, 198, 198);
+    color: rgb(65, 3, 13);
+    padding: 0.8rem;
+    text-transform: uppercase;
+    border: none;
+    margin-top: .2rem;
+}
+
+.input-group i,
+.checkBox i {
+    color: #239207;
+    visibility: hidden;
+}
+
+.input-group small,
+.checkBox small {
+    color: #c61313;
+    visibility: hidden;
+}
+  
+.error input {
+    border: 1px solid #c61313;
+    outline: 1px solid #c61313;
+}
+
+.error small {
+    visibility: visible;
+}
+  
+.success input {
+    border: 1px solid #239207;
+    outline: 1px solid #239207;
+}
+
+.success i {
+    visibility: visible;
+}
+/* .focus {
+    outline: 2px solid rgb(30, 95, 95);
+} */
