@@ -51,22 +51,24 @@ const validateSelect = input => {
 }
 
 const validateRadio = input => {
-    let gender;
+    let gender = '';
     for (const s of input) {
-        if (s.checked) {
-            gender = s.value;
-            iSex.innerHTML = gender;
-            setSuccess(s.parentElement);
-            return true;
-        } else {
-            continue;
-        }
+      if (s.checked) {
+        gender = s.value;
+        iSex.innerHTML = gender;
+      }
     }
-    if (gender === '') {
-        setError(input, 'You must choose gender');
+    for (const s of input) {
+      if (gender === '') {
+        setError(s.parentElement, 'You must choose gender');
         return false; 
+      } else {
+        setSuccess(s.parentElement);
+        return true;
+      }
     }
-} 
+    
+  }
 
   const validateCheck = input => {
     if(!input.checked) {
